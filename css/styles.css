@@ -15,6 +15,43 @@ html {
 /* Ширина контейнера всей страницы 1170px + по 15рх с обеих сторон (паддинг страницы) = 1200рх*/
 /* поставить свойство outline: 2рх solid grey в каждый блок, чтобы при верстке визуально можно было определить правильно ли я делаю отступы, эта рамка не входит в геометрию. */
 
+.nav-menu .current-link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: relative;
+  bottom: -30px;
+}
+
+.our-work .description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.our-work .blok {
+  position: relative;
+}
+
 /* ДЕКОРАТИВНОЕ ОФОРМЛЕНИЕ */
 
 .links-header .icon-envelope {
