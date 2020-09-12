@@ -54,6 +54,7 @@ html {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+/* подчеркивание текущей ссылки */
 .nav-menu .current-link::after {
   content: "";
   display: block;
@@ -97,19 +98,23 @@ html {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 .links-header .icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 .links-header .link {
   display: inline-flex;
   align-items: center;
+  fill: currentColor;
+
+  /* свойства анимации */
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-header .link:hover,
@@ -204,6 +209,7 @@ html {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
+  /* свойства анимации */
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -222,6 +228,7 @@ html {
 .our-clients .icon-client {
   fill: #afb1b8;
 
+  /* свойства анимации */
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -517,6 +524,11 @@ a {
 .address-footer,
 .links-footer .link {
   color: var(--main-color);
+
+  /* свойства анимации */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-hero,
@@ -531,6 +543,11 @@ a {
 .text-nav .link,
 .title-text {
   color: var(--title-color);
+
+  /* свойства анимации */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-header .link {
