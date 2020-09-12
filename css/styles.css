@@ -161,6 +161,12 @@ html {
   height: 44px;
   border-radius: 50%;
   background-color: var(--main-color);
+  fill: #afb1b8;
+
+  /* свойства анимации */
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .social-link:hover,
