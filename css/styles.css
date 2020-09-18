@@ -747,4 +747,5 @@ a {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--text-color);
 }
